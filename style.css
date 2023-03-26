@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body > div {
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+#header {
+  height: 10vh;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#footer {
+  width: 100vw;
+  background-color: rgb(0, 0, 255);
+  position: relative;
+  bottom: 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.addButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.addButton span {
+  line-height: 0;
+}
+
+.formContainer {
+  display: none;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.925);
+}
+
+.textField {
+  height: 2vh;
+  margin: 5px 0px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.63);
+  box-shadow: 2px 2px rgba(221, 11, 11, 0.897);
+}
+
+.formContainer > form > button {
+  margin-top: 5px;
+  padding: 5px;
+  color: rgb(255, 255, 0);
+  background-color: rgb(9, 241, 9);
+  border: none;
+  border-radius: 5px;
+}
+
+#cardsBox {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(250, 235, 215);
+  width: max(50vw, 270px);
+  margin: 0px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
+  min-height: 85vh;
+}
+
+#cardsBox > div {
+  background-color: rgb(165, 42, 42);
+  border: none;
+  border-left: 10px solid rgb(231, 231, 42);
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1.5fr 1.5fr;
+  height: min(100%, 200px);
+}
